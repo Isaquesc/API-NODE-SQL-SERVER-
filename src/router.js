@@ -3,10 +3,10 @@ const controllerProduto = require ('./controllers/produtoController');
 
 const rotas = express.Router();
 
-rotas.get('/All',controllerProduto.BuscarTodos);
-rotas.post('/Criar', controllerProduto.Create);
-rotas.post('/Atualizar', controllerProduto.Atualizar);
-rotas.get('/BuscarId', controllerProduto.BuscarId);
-rotas.post('/Delete', controllerProduto.Delete);
+rotas.get('/BuscarTodos',controllerProduto.BuscarTodos);
+rotas.post('/InserirProduto', controllerProduto.Create);
+rotas.post('/AtualizarProduto', controllerProduto.Atualizar);
+rotas.get('/BuscarProdutoPorCodigo', controllerProduto.BuscarId);
+rotas.post('/DeletarProduto', controllerProduto.Delete);
 
 module.exports = rotas;
